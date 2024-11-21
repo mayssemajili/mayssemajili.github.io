@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>إبداء رأيك في الموقع</title>
+</head>
+<body>
+    <header>
+        <h1>إبداء رأيك في الموقع</h1>
+    </header>
+
+
+    <main>
+        <section>
+            <h2>من فضلك، شاركنا رأيك حول الموقع</h2>
+            <form action="#" method="POST">
+                <!-- Prénom -->
+                <label for="firstName">الاسم الأول:</label>
+                <input type="text" id="firstName" name="firstName" required placeholder="أدخل اسمك الأول"><br><br>
+
+                <!-- Nom -->
+                <label for="lastName">الاسم العائلي:</label>
+                <input type="text" id="lastName" name="lastName" required placeholder="أدخل اسمك العائلي"><br><br>
+
+                <!-- Date de naissance -->
+                <label for="birthdate">تاريخ الميلاد:</label>
+                <input type="date" id="birthdate" name="birthdate" required><br><br>
+
+                <!-- Genre -->
+                <label for="gender">الجنس:</label><br>
+                <input type="radio" id="male" name="gender" value="ذكر" required>
+                <label for="male">ذكر</label><br>
+                <input type="radio" id="female" name="gender" value="أنثى">
+                <label for="female">أنثى</label><br><br>
+
+                <!-- Email -->
+                <label for="email">البريد الإلكتروني:</label>
+                <input type="email" id="email" name="email" required placeholder="أدخل بريدك الإلكتروني"><br><br>
+
+                <!-- Gouvernorat -->
+                <label for="governorate">المحافظة:</label>
+                <select id="governorate" name="governorate" required>
+                    <option value="">اختر المحافظة</option>
+                    <option value="Tunis">تونس</option>
+                    <option value="Ariana">أريانة</option>
+                    <option value="Beja">باجة</option>
+                    <option value="Ben Arous">بن عروس</option>
+                    <option value="Bizerte">بنزرت</option>
+                    <option value="Gabes">قابس</option>
+                    <option value="Gafsa">قفصة</option>
+                    <option value="Jendouba">جندوبة</option>
+                    <option value="Kairouan">القيروان</option>
+                    <option value="Kasserine">القصرين</option>
+                    <option value="Kebili">قبلي</option>
+                    <option value="Kef">الكاف</option>
+                    <option value="Mahdia">المهدية</option>
+                    <option value="Manouba">منوبة</option>
+                    <option value="Medenine">مدنين</option>
+                    <option value="Monastir">المهدية</option>
+                    <option value="Nabeul">نابل</option>
+                    <option value="Sfax">صفاقس</option>
+                    <option value="Sidi Bouzid">سيدي بوزيد</option>
+                    <option value="Siliana">سليانة</option>
+                    <option value="Sousse">سوسة</option>
+                    <option value="Tataouine">تطاوين</option>
+                    <option value="Tozeur">توزر</option>
+                    <option value="Zaghouan">زغوان</option>
+                </select><br><br>
+
+                <!-- Avis -->
+                <label for="feedback">رأيك في الموقع:</label><br>
+                <textarea id="feedback" name="feedback" rows="4" cols="50" required placeholder="أدخل رأيك هنا"></textarea><br><br>
+
+                <!-- Note -->
+                <label for="rating">التقييم (من 1 إلى 5):</label><br>
+                <input type="number" id="rating" name="rating" min="1" max="5" required><br><br>
+
+                <!-- Soumettre le formulaire -->
+                <input type="submit" value="إرسال">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 موقع النظام الشمسي. جميع الحقوق محفوظة.</p>
+    </footer>
+</body>
+</html>
